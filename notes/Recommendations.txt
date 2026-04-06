@@ -1,0 +1,1 @@
+T7 promoter should be considered/included if the construct will be expressed using a pET vector-E.coli system specifically BL21 (DE3) system.
