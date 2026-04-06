@@ -1,11 +1,11 @@
-Phase 1 Construct Design Overview
+**Phase 1 Construct Design Overview**
 
 This project presents the in-silico design of a self-amplifying RNA (saRNA) construct for dual antigen expression targeting parasite-derived macrophage migration inhibitory factors (MIFs) from Plasmodium and Leishmania.
 The final construct follows the organization:
 Replicon -> Subgenomic promoter -> PMIF -> Subgenomic promoter -> LmMIF -> Poly(A) tail
 This design enables each antigen to be independently transcribed using subgenomic promoters, which would presumably result in equal expression.
 
-2. Construct Architecture and Sequence Components
+**2. Construct Architecture and Sequence Components**
 
 The construct was put together with the following DNA fragments:
 
@@ -23,19 +23,19 @@ poly(A) tail
 
 All the sequences were imported and curated in SnapGene, which is consistent across individual .dna files.
 
-Strategies: Gibson Assembly (3) Cloning Strategy. The construct was simulated in-silico by coupling in SnapGene with Gibson Assembly-based strategy.
+**3. Strategies:** Gibson Assembly. The construct was simulated in-silico by coupling in SnapGene with Gibson Assembly-based strategy.
 
 Key principles:
 The fragments are attached through overlapping homologous regions (~20 bp).
 The sequences were coupled with in-silico PCR using primers that contained overlapping sequence.
 Direct insertion of non-coding elements (SG promoter, polyA) was done.
 
-4. Fragment Arrangement in SnapGene.
+**4. Fragment Arrangement in SnapGene.**
 Vector
 A placeholder Alphavirus replicon sequence was used as a linearized vector.
 Downstream insertions of replicase region.
 
-Fragment Setup
+**5. Fragment Setup**
 Fragment		Component			            Strategy
 1.         	SG promoter			          Used directly as fragment
 2.			    PMIF				              PCR amplification
@@ -47,7 +47,7 @@ Fragment		Component			            Strategy
 Primer sequences were developed in a way that the 5’ ends of each forward primer have an overlap sequence that is homologous to the next downstream fragment with the 3’ ends annealing to the template DNA. This design uses a forward primer in the downstream fragment that contains the sequence overlap with the second subgenomic promoter to allow assembling. Equally, the reverse primers were designed to have an overlap to the next fragment, which contains the poly(A) tail, and thus, allows assembly across fragment junctions when using Gibson Assembly.
 Caution: The poly(A) overlap is simplified to allow in-silico design and would need to be refined to allow experimental implementation.
 
-6. Assembly Outcome
+**6. Assembly Outcome**
 
 The fragments were arranged and positioned in the following order in SnapGene:
 
@@ -58,11 +58,11 @@ Result: SnapGene was not able to complete automatic assembly because of the poor
       Coding sequence PCR primer design.
       Rational assembly architecture that is compatible with saRNA systems.
       
-7. Technical Considerations
+**7. Technical Considerations**
 Primer specificity was restricted by repetitive sequences of placeholders (e.g., SG promoter).
 The definition of the overlap regions was done manually and would require optimization.
 
-9. Conclusion
+**8. Conclusion**
 The entire in-silico cloning plan of a dual-antigen saRNA construct was created in SnapGene.
 This workflow demonstrates:
     Rational construct design
@@ -78,5 +78,5 @@ Overlap refinement, downstream structural and immunological validation with real
 3. Frolov I et al. Alphavirus-based expression vectors: Strategies and applications. Proc Natl Acad Sci USA. 1996;93(21):11371–11377.
 
 
-##Author
+**Author**
 Abdulrasheed Buhari
